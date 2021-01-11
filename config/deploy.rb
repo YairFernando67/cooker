@@ -4,7 +4,7 @@ server '138.197.110.143', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:YairFernando67/cooker.git'
 set :application,     'cooker'
-set :user,            'admin_user'
+set :user,            'mac_user'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 set :puma_user, fetch(:user)

@@ -1,10 +1,10 @@
 # config valid only for current version of Capistrano
-lock '3.4.0'
+lock '3.15.0'
 # config valid only for current version of Capistrano
-lock '3.4.0'
+lock '3.15.0'
 
 set :application, 'cooker'
-set :user,            'admin_user'
+set :user,            'mac_user'
 set :repo_url, 'git@github.com:YairFernando67/cooker.git'
 
 # Default branch is :master
@@ -119,8 +119,8 @@ end
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :web, %w{admin_user@138.197.110.143}
-role :app, %w{admin_user@138.197.110.143}
+role :web, %w{mac_user@138.197.110.143}
+role :app, %w{mac_user@138.197.110.143}
 
 set :migration_role, :app
 
@@ -134,4 +134,4 @@ set :branch, :master
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server '138.197.110.143', user: 'admin_user', roles: %w{web app}
+server '138.197.110.143', user: 'mac_user', roles: %w{web app}

@@ -79,7 +79,11 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: cooker_production
-  username: cooker
-  password: <%= ENV['COOKER_DATABASE_PASSWORD'] %>
+  pool: 5
+  username: mac_user
+  password: password   ### password you have specified within psql
+  host: localhost
+  port: 5432 

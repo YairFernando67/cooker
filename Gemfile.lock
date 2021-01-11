@@ -176,6 +176,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  capistrano
   capistrano-bundler (~> 1.6)
   capistrano-rails (~> 1.5)
   capistrano-rvm
